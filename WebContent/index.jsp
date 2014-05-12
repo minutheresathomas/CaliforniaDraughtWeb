@@ -1,113 +1,135 @@
-<html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="">
-<meta name="author" content="">
+<title>California Water Monitoring</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script src="http://code.highcharts.com/maps/highmaps.js"></script>
+<script src="http://code.highcharts.com/maps/modules/map.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+<script type="text/javascript" src="resources/scripts/index.js"></script>
 
+<link href="style/style.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" type="text/css" href="style/coin-slider.css" />
+<link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
 
-<title>Cali Draught</title>
-<link rel="stylesheet" type="text/css"
-	href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+<script type="text/javascript" src="resources/scripts/cufon-yui.js"></script>
+<script type="text/javascript" src="resources/scripts/cufon-aller.js"></script>
+<script type="text/javascript" src="resources/scripts/script.js"></script>
+<script type="text/javascript" src="resources/scripts/coin-slider.min.js"></script>
+
 </head>
-
-<body>
-
-	<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-		<div class="container">
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle" data-toggle="collapse"
-					data-target=".navbar-collapse">
-					<span class="sr-only">Toggle navigation</span> <span
-						class="icon-bar"></span> <span class="icon-bar"></span> <span
-						class="icon-bar"></span>
-				</button>
-				<a class="navbar-brand" href="#">Project name</a>
-			</div>
-
-
-
-			<div class="jumbotron">
-				<div class="container">
-					<h1>California Draught</h1>
-					<p>This is a template for a simple marketing or informational
-						website. It includes a large callout called a jumbotron and three
-						supporting pieces of content. Use it as a starting point to create
-						something more unique.</p>
-
-					<!-- Split button -->
-					
-					<div class="btn-group">
-						<button type="btn btn-default btn-sm dropdown-toggle">Month</button>
-						<button type="button" data-toggle="dropdown">
-							<span class="caret"></span> 
-						</button>
-						<button type="btn btn-default btn-sm dropdown-toggle">Day</button>
-						<button type="button" data-toggle="dropdown">
-							<span class="caret"></span> 
-						</button>
-						<button type="btn btn-default btn-sm dropdown-toggle">Year</button>
-						<button type="button" data-toggle="dropdown">
-							<span class="caret"></span> 
-						</button>
-						
-					</div>
-<br>
-<br>
-					<a class="btn btn-primary btn-lg" role="button">submit &raquo;</a>
-					<div class="navbar-collapse collapse">
-						<form class="navbar-form navbar-right" role="form">
-							<div class="form-group">
-								<h3 class="sub-header">Reservoir Information</h3>
-								<div class="panel panel-default">
-									<table class="table table-striped">
-
-										<thead>
-											<tr>
-												<th>Reservoir#</th>
-												<th>Reservoir Name</th>
-												<th>County</th>
-												<th>Longitude</th>
-												<th>Latitude</th>
-											</tr>
-										</thead>
-										<tbody>
-											<tr>
-												<td>SHA</td>
-												<td>Shashta Dam</td>
-												<td>Mt Shasta</td>
-												<td>1100</td>
-												<td>1200</td>
-											</tr>
-											<tr>
-												<td>ALM</td>
-												<td>Alameden Dam</td>
-												<td>Alameda</td>
-												<td>1100</td>
-												<td>1200</td>
-											</tr>
-
-										</tbody>
-
-									</table>
-								</div>
-							</div>
-					</div>
-					</form>
-				</div>
-			</div>
-		</div>
-	</div>
-	</div>
-
+<body background="resources/images/bg1.jpg">
+<div class="main">
+  <div class="header">
+    <div class="header_resize">
+      <div class="menu_nav">
+        <ul>
+          <li class="active"><a href="index.jsp"><span>Home</span></a></li>
+          <li><a href="about1.jsp"><span>About</span></a></li>
+          <li><a href="Effects1.jsp"><span>Effects</span></a></li>
+        </ul>
+      </div>
+      <div class="logo">
+        <h1><a href="index.jsp"><small style="color:#0033ff;">Save Water.... </small> <span>California Water Monitoring</span></a></h1>
+      </div>
+      <div class="clr"></div>
+      <div class="slider">
+        <div id="coin-slider"> <a href="#"><img src="resources/images/d6.jpg" width="970" height="305" alt="" /> </a> <a href="#"><img src="resources/images/d5.jpg" width="970" height="305" alt="" /> </a> <a href="#"><img src="resources/images/drought1.jpg" width="970" height="305" alt="" /> </a> </div>
+      </div>
+      <div class="clr"></div>
+    </div>
+  </div>
+  <div class="content">
+    <div class="content_resize">
+      <div class="mainbar">
+        <div class="article">
+          <h2 style="margin-top:30px"><span style="color:white;">California Lakes and Reservoirs</span></h2>
+         
+          <div class="clr"></div>
+	          <div id="map-canvas" style="width: 620px; height: 620px"></div>
+		          <div class="post_content">
+		            <p>. <a href="#"></a> </p>
+		            <p><strong></strong> </p>
+		          </div>
+		          
+						<div class="col-md-3">
+							<form method="get" action="basicform.php">
+								<table>
+										<tr> 
+											
+											<td style="margin-right:10px"><font color="#663300"> Reservoir Id: </font><input type="text" id="reservoir" name="Reservoir Id" size="10"/></td>
+											<td style="padding:20px"> &nbsp&nbsp&nbsp&nbsp <button id="search" type="button" class="btn btn-primary" onclick="doNav()">Go</button> </td>
+										</tr>
+								</table>
+							</form>
+						</div>
+				
+	          <div class="clr"></div>
+        </div>
+        <div class="article">
+          
+          <div class="clr"></div>
+        </div>
+      
+      </div>
+      <div class="sidebar">
+        
+        <div class="gadget">
+          <h2 class="star" style="margin-top:32px; margin-bottom:20px;"><span style="color:white;">Graphs</span> </h2>
+		   <li class="gg4"><a href="storageGraph.jsp" style="color:#660000">Storage</a></li></font>
+            <li class="gg4"><a href="inflowGraph.jsp" style="color:#660000">Inflow</a></li></font>
+            <li class="gg4"><a href="outflowGraph.jsp" style="color:#660000">Outflow</a></li></font>
+		  
+          <div class="clr"></div>
+        </div>
+       
+        <div class="gadget">
+          
+        </div>
+        <div class="gadget">
+          <h2 class="star"><span style="color:white;">Discussions</span></h2>
+          <div class="clr"></div>
+          <ul class="ex_menu">
+            <a href="http://www.facebook.com/caldrought"><img src="resources/images/facebook.jpg" height="35px" width="35px" style="margin-right:25px;"></a>
+			<a href="http://www.twitter.com/CAwaterMonitor"><img src="resources/images/twitter.jpg" height="35px" width="35px"></a>
+			
+          </ul>
+        </div>
+      </div>
+      <div class="clr"></div>
+    </div>
+  </div>
+  <div class="fbg">
+    <div class="fbg_resize">
+      <div class="col c1">
+        <h2><span style="color:#660000;">Image Gallery</span></h2>
+        <a href="#"><img src="resources/images/gal1.jpg" width="75" height="75" alt="" class="gal" /></a> <a href="#"><img src="resources/images/gal2.jpg" width="75" height="75" alt="" class="gal" /></a> <a href="#"><img src="resources/images/gal3.jpg" width="75" height="75" alt="" class="gal" /></a> <a href="#"><img src="resources/images/gal4.jpg" width="75" height="75" alt="" class="gal" /></a> <a href="#"><img src="resources/images/gal5.jpg" width="75" height="75" alt="" class="gal" /></a> <a href="#"><img src="resources/images/gal6.jpg" width="75" height="75" alt="" class="gal" /></a> </div>
+      <div class="col c2">
+       <p style="margin-right:200px"></p>
+      </div>
+      <div class="col c3">
+        <h2><span style="color:#660000;">Contact Us</span></h2>
+        
+        <p class="contact_info"> <span>Address:</span> San Jose State University<br />
+          <span>E-mail:</span>cmpe272@gmail.com <a href="#"></a> </p></font>
+      </div>
+      <div class="clr"></div>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="footer_resize">
+      <p align="center">Copyright &copy; :Team 19.  All Rights Reserved</p>
+    
+    </div>
+  </div>
+</div>
+<script type="text/javascript">
+function doNav()
+{
+	var station_id=document.getElementById("reservoir").value;
+	document.location.href="reservoir3.jsp?id="+station_id;
+	}
+</script>
 </body>
-
-<form method="get" action="basicform.php">
-Your name: <input type="text" id="name" name="name" size="25" /> <br />
-Your age: <input type="text" id="age" name="age" size="25" /> <br />
-<input type="submit" value="submit" />
-</form>
- 
-
 </html>

@@ -9,6 +9,7 @@ function() {
 var init = function() {
 	$.ajax({
 		url : "api/reservoir/" + id, context : document.body}).done(function(resp) {
+			
 		$("#res_stationId").html(resp.stationId);
 		$("#res_nam").html(resp.stationName);
 		$("#res_county").html(resp.county);
